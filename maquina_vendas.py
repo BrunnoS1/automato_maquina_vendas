@@ -1,4 +1,3 @@
-
 import tkinter as tk
 
 # Definições do autômato
@@ -51,7 +50,7 @@ def processa_input(entrada):
         if estado_atual == 8:
             output_text.set(f"Você retirou o refrigerante e recebeu o troco de R${troco}")
             troco = 0
-            estado_atual = 0
+            estado_atual = f(estado_atual,entrada)
             return  
         else:
             output_text.set(f"Saldo insuficiente (custo R$2,00)\nSaldo: R${estado_atual*0.25}\nTroco: R${troco}")
