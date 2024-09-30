@@ -83,13 +83,14 @@ output_label.pack()
 entry_field = tk.Entry(root)
 entry_field.pack()
 
+# Botão para processar o valor digitado
+btn_custom = tk.Button(root, text="Entrada de valor", command=lambda: processa_input(entry_field.get()))
+btn_custom.pack()
+
 # Botão para processar a entrada 'b'
 btn_b = tk.Button(root, text="Botão retirar", command=lambda: processa_input('b'))
 btn_b.pack()
 
-# Botão para processar o valor digitado
-btn_custom = tk.Button(root, text="Entrada personalizada", command=lambda: processa_input(entry_field.get()))
-btn_custom.pack()
 
 # Botão para sair
 btn_quit = tk.Button(root, text="Sair", command=sair)
