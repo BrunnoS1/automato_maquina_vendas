@@ -43,7 +43,7 @@ def processa_input(entrada):
     global estado_atual
     global troco
     if entrada not in Sigma:
-        output_text.set(f"Entrada: {entrada}\nERRO: Entrada não pertence ao alfabeto\nEstado Atual: {estado_atual}")
+        output_text.set(f"Entrada: {entrada}\nERRO: Entrada não pertence ao alfabeto (25, 50, 100)\nEstado Atual: {estado_atual}")
         return
 
     if entrada == 'b':
